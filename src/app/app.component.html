@@ -1,0 +1,37 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+<div style="position:center;">
+
+<scan-qr *ngIf='showCam' (image)='detect($event)'  class="center" [innerImageSrc]="projectedImage" [pAngle] ="projectedAngle" [aAngle]="actualAngle" [warn]="warning" ></scan-qr>
+
+<img #faceCheck style ='display: none;' [src]='imageSrc'>
+
+
+<canvas style='position: absolute;z-index: 1;top:5vh' #overlay1></canvas>
+
+<p>{{ label }}</p>
+
+</div>
+
+
+
+<div class="cam-div">
+    <button (click)='stopCam()' type="button" class="btn btn-success btn-block">Capture Images Using Camers</button>
+</div>
+
+<div class="cam-div">
+<h2><span>OR</span></h2>
+</div>
+
+
+<div class="cam-div">
+    <button (click)='stopCam()' type="button" class="btn btn-basic btn-block">Add Images Files</button>
+</div>
+
+

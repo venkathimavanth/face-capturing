@@ -1,0 +1,13 @@
+<div  class='cam'>
+    <canvas class="bottom" #canvas></canvas>
+    <canvas class='overlay middle' #canvasOverlay></canvas>
+    <video class='video middle' #video playsinline autoplay></video>
+
+    <a class='nvc-cam-text2'>
+        {{pAngle}} <br>
+        {{aAngle}}
+    </a>
+    
+    <a class='nvc-cam-text1'>    <img src='{{ innerImageSrc }}' width="75" height="75"> </a>
+    <a class='nvc-cam-text3'> {{warn}}  </a>
+</div>

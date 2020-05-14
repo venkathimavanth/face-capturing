@@ -1,0 +1,129 @@
+.bottom {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.middle {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video {
+  object-fit: cover;
+}
+
+.overlay {
+  z-index: 1;
+  display: none;
+}
+
+.hide {
+  height: 0px;
+}
+
+.invert {
+  position: absolute;
+  top: 3%;
+  right: 15%;
+  z-index: 2;
+}
+
+.nvc-cam-close {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+}
+.nvc-display-businessunit {
+  position: absolute;
+  top: 5%;
+  z-index:2;
+  left: 5%;
+  color: white;
+  font-weight: 600;
+}
+
+.nvc-cam-text1 {
+  position: absolute;
+  top: 5%;
+  z-index: 2;
+  right: 5%;
+  font-size: 3.0rem;
+  color: black;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 0px;
+  outline: 0px;
+  color: white;
+  padding-left: 0px;
+  padding-right: 0px;
+  font: bold 24px/45px Helvetica, Sans-Serif; 
+  letter-spacing: -1px;  
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+}
+
+
+.nvc-cam-text2 {
+  position: absolute;
+  top: 5%;
+  z-index: 2;
+  left: 5%;
+  font-size: 3.0rem;
+  border-radius: 0px;
+  font-weight: bold;
+  border: 0px;
+  outline: 0px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font: bold 24px/45px Helvetica, Sans-Serif; 
+  letter-spacing: -1px;  
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+}
+.nvc-cam-text3 {
+  position: absolute;
+  bottom: 5%;
+  left:25%;
+  z-index: 2;
+  font-size: 3.0rem;
+  color: red;
+  border: 1px;
+  outline: 1px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font: bold 24px/45px Helvetica, Sans-Serif; 
+  letter-spacing: -1px;  
+  text-decoration: none;
+}
+
+
+.nvc-cam-clear {
+  position: absolute;
+  top: 3%;
+  right: 15%;
+}
+.nvc-scan-height{
+  position: relative;
+  width: 100%;
+}
+.cam {
+  position: relative;
+  height: 600px;
+  width:600px;
+}
+// @media only screen and (min-width:860px) {
+  
+// }
+
+// @media only screen and (max-width:860px) {
+//   .cam {
+//     height: 50%;
+//     width:100%;
+//   }
+// }
